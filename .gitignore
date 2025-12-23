@@ -1,0 +1,16 @@
+*.pem
+.vscode
+*.bcf
+*.out
+*.aux
+*.xml
+.venv
+.venv/
+venv/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+secrets.txt
+.env
+*.gz
