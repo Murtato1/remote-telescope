@@ -1,3 +1,11 @@
+---
+layout: page
+title: Lesson Plan
+permalink: /plans/lessons/
+---
+
+
+
 # Lesson plan ideas
 
 * 6 hours worth of content
