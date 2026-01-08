@@ -1,102 +1,160 @@
+/* ===============================
+   Color System (Dark First)
+   =============================== */
+
+   :root {
+    --bg: #0e1116;
+    --bg-alt: #161b22;
+    --text: #e6edf3;
+    --text-muted: #9da7b3;
+  
+    --link: #58a6ff;
+    --link-hover: #79c0ff;
+  
+    --border: #30363d;
+  
+    --code-bg: #161b22;
+    --accent: #8fbce6;
+  }
+  
+
+
 /* ---------- Base ---------- */
 
 body {
-    margin: 0;
-    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #1a1a1a;
-    background: #ffffff;
-    line-height: 1.7;
-  }
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.content {
+  max-width: 860px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
   
-  /* ---------- Layout ---------- */
-  
-  .content {
-    max-width: 820px;
-    margin: 3rem auto;
-    padding: 0 1.5rem;
-  }
-  
-  /* ---------- Header ---------- */
-  
-  .site-header {
-    border-bottom: 1px solid #e5e5e5;
-    padding: 1rem 0;
-  }
-  
-  .header-inner {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .site-title a {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .site-nav a {
-    margin-left: 1.25rem;
-    font-size: 0.95rem;
-    color: #444;
-    text-decoration: none;
-  }
-  
-  .site-nav a:hover {
-    text-decoration: underline;
-  }
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-nav a {
+  margin-left: 1.25rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+
   
   /* ---------- Typography ---------- */
   
   h1, h2, h3 {
+    color: var(--text);
     font-weight: 600;
     line-height: 1.3;
-    margin-top: 2.5rem;
   }
   
   h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
+    margin-top: 2.5rem;
   }
   
   h2 {
-    font-size: 1.4rem;
-    border-bottom: 1px solid #eee;
+    font-size: 1.45rem;
+    margin-top: 2.5rem;
     padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
   }
   
   p {
     margin: 1rem 0;
+    color: var(--text);
   }
+  
   
   /* ---------- Links ---------- */
   
   a {
-    color: #0055aa;
+    color: var(--link);
   }
   
   a:hover {
-    text-decoration: underline;
+    color: var(--link-hover);
   }
+
+  /*Code*/
+  code {
+    background: var(--code-bg);
+    padding: 0.15rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  pre {
+    background: var(--code-bg);
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+
+  /*Callout*/
+  .callout {
+    background: var(--bg-alt);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.25rem;
+    margin: 2.5rem 0;
+    color: var(--text);
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 2rem 0;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.6rem 0.8rem;
+  }
+  
+  th {
+    background: var(--bg-alt);
+  }
+  
+
   
   /* ---------- Footer ---------- */
   
   .site-footer {
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var(--border);
     margin-top: 4rem;
     padding: 1.5rem;
     text-align: center;
     font-size: 0.85rem;
-    color: #666;
+    color: var(--text-muted);
   }
   
-  .callout {
-    background: #f8f9fa;
-    border-left: 4px solid #ccc;
-    padding: 1rem;
-    margin: 2rem 0;
-  }
   
