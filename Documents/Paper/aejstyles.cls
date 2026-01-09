@@ -79,10 +79,10 @@
 
 \RequirePackage[noblocks]{authblk}
 
-\def\@ouplogo{aejlogo_c.png}
+\def\@ouplogo{figs/aejlogo_c.png}
 
 \def\@jname{Astronomy Education Journal}
-\def\@jlogo{aejlogo_h.png}
+\def\@jlogo{figs/aejlogo_h.png}
 
 \newcommand{\jname}[1]{\def\@jname{#1}}
 \newcommand{\jlogo}[1]{\def\@jlogo{#1}}

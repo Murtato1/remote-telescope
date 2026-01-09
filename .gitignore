@@ -9,3 +9,4 @@ vendor
 _plans/Paper/main.aux
 *.xml
 *.gz
+*.bcf

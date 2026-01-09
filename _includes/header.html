@@ -1,7 +1,14 @@
 <header class="site-header">
     <div class="header-inner">
       <div class="site-title">
-        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <a href="{{ '/' | relative_url }}" class="logo-link">
+          <img
+            src="{{ '/assets/images/ALBBS.png' | relative_url }}"
+            alt="Remote Astronomy Charity logo"
+            class="site-logo"
+          />
+          <span class="site-name">{{ site.title }}</span>
+        </a>
       </div>
   
       <nav class="site-nav">
