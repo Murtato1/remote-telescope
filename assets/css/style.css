@@ -127,8 +127,32 @@ body {
   }
 
   .side-column img {
-    width: 150%;
-    max-width: 500;  
+    width: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+
+  .side-info {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .side-info-title {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    border: none;
+  }
+
+  .side-info-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.5;
   }
   
   @media (max-width: 900px) {
